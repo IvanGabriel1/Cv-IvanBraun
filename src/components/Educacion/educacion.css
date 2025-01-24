@@ -1,0 +1,24 @@
+.educacion-container {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.educacion-container h3 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .educacion-container {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .educacion-container {
+    margin-top: 2rem;
+  }
+}

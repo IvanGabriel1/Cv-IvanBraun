@@ -1,0 +1,15 @@
+.body-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 190px auto;
+  gap: 0.5rem;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .body-container {
+    grid-template-columns: 25% 50% 25%;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+}

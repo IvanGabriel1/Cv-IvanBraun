@@ -1,0 +1,70 @@
+.accordion-educacion-container {
+  margin: auto;
+}
+
+.accordion-ed-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  background-color: blue;
+}
+
+.accordion-ed-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-ed-content {
+  max-height: 0; /* Oculta el contenido inicialmente */
+  overflow: hidden; /* Oculta el contenido que desborda */
+  transition: max-height 0.5s ease-in-out; /* Transición para el deslizamiento */
+  background-color: #f1f1f1;
+}
+
+.accordion-ed-content.open {
+  max-height: 600px;
+  border-top: thin solid var(--third-color);
+  border-bottom: 0;
+  background-color: lightblue;
+}
+
+.article-ed-accordion {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  border: thin solid black;
+}
+
+.article-ed-accordion a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.article-ed-accordion:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.modal-educacion {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.open-modal {
+  display: block;
+  opacity: 1;
+}

@@ -1,0 +1,19 @@
+.perfil-profesional-container {
+  display: inline-block;
+}
+
+.perfil-profesional-container h3 {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.perfil-profesional-container p {
+  text-align: center;
+  line-height: 1.2rem;
+}
+
+@media screen and (min-width: 380px) {
+  .perfil-profesional-container p {
+    line-height: 1.5rem;
+  }
+}

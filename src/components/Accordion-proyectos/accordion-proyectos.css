@@ -1,0 +1,40 @@
+.accordion-proyectos-container {
+  margin: auto;
+  width: 100%;
+}
+
+.accordion-pr-article {
+  border: thin solid black;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-pr-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-pr-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-pr-content {
+  max-height: 0; /* Oculta el contenido */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  background-color: lightblue;
+  padding: 0 1rem;
+}
+
+.accordion-pr-content.open-pr {
+  max-height: 500px; /* Tamaño suficiente para mostrar el contenido */
+}
