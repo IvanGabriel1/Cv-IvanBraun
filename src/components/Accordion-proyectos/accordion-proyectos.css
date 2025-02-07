@@ -4,9 +4,10 @@
 }
 
 .accordion-pr-article {
-  border: thin solid black;
   margin-bottom: 1rem;
   overflow: hidden;
+  border: thin solid var(--white-color);
+  border-radius: 0.5rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -16,7 +17,7 @@
   align-items: center;
   padding: 0.5rem 1rem;
   width: 100%;
-  background-color: gray;
+  background-color: var(--third-color);
   color: white;
   border: none;
   cursor: pointer;
@@ -25,16 +26,52 @@
 .accordion-pr-button img {
   width: 24px;
   height: 24px;
+  margin-right: 0.5rem;
 }
 
 .accordion-pr-content {
   max-height: 0; /* Oculta el contenido */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
-  background-color: lightblue;
+  background-color: var(--third-color);
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .accordion-pr-content.open-pr {
   max-height: 500px; /* Tamaño suficiente para mostrar el contenido */
+}
+
+.open-pr .accordion-pr-button {
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+  border-bottom: thin solid var(--white-color);
+}
+
+.accordion-pr-content h5 {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: var(--step--2);
+}
+
+.accordion-pr-content p {
+  margin: 0.25rem;
+  text-align: center;
+  font-size: var(--step--2);
+}
+
+.accordion-pr-content section {
+  text-align: center;
+  font-size: var(--step--2);
+  margin: 0.25rem;
+}
+
+.accordion-pr-content a {
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--step--2);
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
 }

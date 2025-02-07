@@ -37,8 +37,9 @@ const AccordionProyectos = () => {
             de compras y realizar pedidos en tiempo real.
           </p>
           <section>
-            Tecnologías utilizadas: React, Firebase, Redux Toolkit, EmailJS,
-            CSS, HTML
+            <b>Tecnologías utilizadas: </b>
+            React, Firebase (Storage / Database / Authentication), Redux
+            Toolkit, EmailJS, CSS, HTML, GIT.
           </section>
           <a target="_blank" href="https://aiskelys-bakes.vercel.app/">
             <u>Ver proyecto</u>
@@ -57,7 +58,7 @@ const AccordionProyectos = () => {
             src={openAccordion === 2 ? svgButtonUp : svgButtondown}
             alt={openAccordion === 2 ? "Cerrar" : "Abrir"}
           />
-          Pumba
+          CoderHouse - React.JS Pumba
         </button>
         <div
           className={`accordion-pr-content ${
@@ -72,7 +73,9 @@ const AccordionProyectos = () => {
             carrito, ver el detalle del carrito y realizar un codigo endpoint
             del pedido realizado.
           </p>
-          <section>Tecnologías utilizadas: React, Firebase, CSS, HTML</section>
+          <section>
+            Tecnologías utilizadas: React, Firebase, CSS, HTML, GIT
+          </section>
           <a
             target="_blank"
             href="https://e-commerce-react-lime-phi.vercel.app/"
@@ -107,7 +110,7 @@ const AccordionProyectos = () => {
             proyecto fue poner a prueba mis habilidades aprendidas de forma
             autodidacta.
           </p>
-          <section>Tecnologías utilizadas: HTML, CSS</section>
+          <section>Tecnologías utilizadas: HTML, CSS, GIT</section>
           <a target="_blank" href="https://copiando-plantilla.vercel.app/">
             <u>Ver proyecto</u>
           </a>

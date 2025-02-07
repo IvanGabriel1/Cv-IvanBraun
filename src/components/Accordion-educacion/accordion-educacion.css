@@ -1,61 +1,55 @@
-.accordion-educacion-container {
-  margin: auto;
-}
-
-.accordion-ed-button {
+.educacion-container {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  margin: auto;
-  width: 100%;
-  background-color: blue;
+  max-width: 800px;
 }
 
-.accordion-ed-button img {
-  width: 24px;
-  height: 24px;
-}
-
-.accordion-ed-content {
-  max-height: 0; /* Oculta el contenido inicialmente */
-  overflow: hidden; /* Oculta el contenido que desborda */
-  transition: max-height 0.5s ease-in-out; /* Transición para el deslizamiento */
-  background-color: #f1f1f1;
-}
-
-.accordion-ed-content.open {
-  max-height: 600px;
-  border-top: thin solid var(--third-color);
-  border-bottom: 0;
-  background-color: lightblue;
-}
-
-.article-ed-accordion {
+.article-ed {
   display: flex;
-  justify-content: space-between;
-  height: 3rem;
-  border: thin solid black;
-}
-
-.article-ed-accordion a {
-  display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: auto;
+  border: thin solid white;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  padding: 0.25rem;
 }
 
-.article-ed-accordion:hover {
+.article-ed:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-.modal-educacion {
+
+.article-ed img {
+  width: 50px;
+  height: 50px;
+}
+
+.article-ed h5 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-align: center;
+  font-size: var(--step--3);
+}
+
+.educacion-container h3 {
+  text-align: center;
+}
+
+/* Modal: */
+.modal-content {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  background-color: white;
+  min-width: 300px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 600px;
+
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   display: none;
@@ -67,4 +61,53 @@
 .open-modal {
   display: block;
   opacity: 1;
+  height: auto;
+}
+
+.close-modal {
+  position: absolute; /* Para posicionar dentro del modal */
+  color: var(--white-color);
+  border: thin solid white;
+  background-color: rgba(0, 0, 0, 0.6);
+  right: 0.2rem;
+  top: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.close-modal::before {
+  content: "×";
+  font-size: 1.5rem;
+}
+
+.modal-img {
+  width: 100%;
+
+  height: auto;
+}
+
+/** Fin modal **/
+@media screen and (min-width: 350px) {
+  .educacion-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-ed h5 {
+    font-size: var(--step--1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
 }

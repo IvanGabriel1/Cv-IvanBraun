@@ -1,6 +1,7 @@
 import React from "react";
 import imgCV from "../../assets/Foto-Cv.jpg";
 import "./presentacion.css";
+import Contacto from "../Contacto/Contacto";
 
 const Presentacion = () => {
   return (
@@ -14,8 +15,9 @@ const Presentacion = () => {
             Front - End
           </h2>
         </span>
-        <div className="presentacion-qr">QR / Video</div>
       </section>
+      <hr />
+      <Contacto />
     </div>
   );
 };

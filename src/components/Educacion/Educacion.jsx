@@ -4,8 +4,8 @@ import AccordionEducacion from "../Accordion-educacion/AccordionEducacion";
 
 const Educacion = () => {
   return (
-    <div className="educacion-container">
-      <h3>Educacion:</h3>
+    <div className="educacion-component">
+      <h3>Educación:</h3>
       <AccordionEducacion />
     </div>
   );

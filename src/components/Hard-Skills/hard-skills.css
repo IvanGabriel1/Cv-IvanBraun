@@ -3,6 +3,8 @@
   display: inline-block;
   margin-top: 0.5rem;
   text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: thin solid var(--white-color);
 }
 
 .hard-skills-ul {
@@ -15,4 +17,17 @@
 .hard-skills-ul li {
   font-size: var(--step--3);
   line-height: 1.2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .hard-skills-container {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hard-skills-container {
+    margin-right: 3rem;
+  }
 }
