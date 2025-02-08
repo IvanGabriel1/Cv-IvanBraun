@@ -8,7 +8,6 @@
   overflow: hidden;
   border: thin solid var(--white-color);
   border-radius: 0.5rem;
-  transition: all 0.3s ease-in-out;
 }
 
 .accordion-pr-button {
@@ -32,8 +31,8 @@
 .accordion-pr-content {
   max-height: 0; /* Oculta el contenido */
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
   background-color: var(--third-color);
+  transition: max-height 0.5s ease-in-out;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
@@ -74,4 +73,28 @@
   font-size: var(--step--2);
   color: var(--first-color);
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-pr-button {
+    padding: 0.2rem 1rem;
+  }
+
+  .accordion-pr-content p {
+    font-size: var(--step--3);
+  }
+
+  .accordion-pr-content {
+    transition: none;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .accordion-pr-button {
+    padding: 0.5rem 1rem;
+  }
+
+  .accordion-pr-content p {
+    font-size: var(--step--2);
+  }
 }

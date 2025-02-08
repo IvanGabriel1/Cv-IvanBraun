@@ -11,7 +11,7 @@ const Presentacion = () => {
         <span className="presentacion-info-datos">
           <h1>CV - Iván Braun</h1>
           <h2>
-            Desarrolador web <br />
+            Desarrolador Web <br />
             Front - End
           </h2>
         </span>
