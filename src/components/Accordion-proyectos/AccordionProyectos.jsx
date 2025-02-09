@@ -112,7 +112,7 @@ const AccordionProyectos = () => {
             proyecto fue poner a prueba las habilidades aprendidas de forma
             autodidacta.
           </p>
-          <section>Tecnologías utilizadas: HTML, CSS, Git</section>
+          <section>Tecnologías utilizadas: HTML, CSS, JavaScript, Git</section>
           <a target="_blank" href="https://copiando-plantilla.vercel.app/">
             🔗
             <u>Ver proyecto</u>
@@ -140,9 +140,9 @@ const AccordionProyectos = () => {
         >
           <h5>Primera página realizada desde 0.</h5>
           <p>
-            Proyecto de broma con temática absurda donde se realiza una página
-            web de una página Single Page, donde se ofrece servicios absurdos,
-            opiniones de clientes y un formulario de contacto.
+            Proyecto de practica donde se realiza una página web Single Page,
+            donde se ofrece servicios, opiniones de clientes y un formulario de
+            contacto.
           </p>
           <section>Tecnologías utilizadas: HTML, CSS, Git</section>
           <a target="_blank" href="https://megalodon-dun.vercel.app/">
