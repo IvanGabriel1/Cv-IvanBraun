@@ -1,5 +1,5 @@
 import React from "react";
-import imgCV from "../../assets/Foto-Cv.jpg";
+import imgCV from "../../assets/nueva-foto.jpeg";
 import "./presentacion.css";
 import Contacto from "../Contacto/Contacto";
 
