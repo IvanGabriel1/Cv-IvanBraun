@@ -49,7 +49,7 @@ const AccordionProyectos = () => {
       </article>
 
       {/* Proyecto 2 */}
-      <article
+      {/* <article
         className={`accordion-pr-article ${
           openAccordion === 2 ? "open-pr" : ""
         }`}
@@ -85,10 +85,10 @@ const AccordionProyectos = () => {
             <u>Ver proyecto</u>
           </a>
         </div>
-      </article>
+      </article> */}
 
       {/* Proyecto 3 */}
-      <article
+      {/* <article
         className={`accordion-pr-article ${
           openAccordion === 3 ? "open-pr" : ""
         }`}
@@ -118,10 +118,10 @@ const AccordionProyectos = () => {
             <u>Ver proyecto</u>
           </a>
         </div>
-      </article>
+      </article> */}
 
       {/* Proyecto 4 */}
-      <article
+      {/* <article
         className={`accordion-pr-article ${
           openAccordion === 4 ? "open-pr" : ""
         }`}
@@ -150,7 +150,7 @@ const AccordionProyectos = () => {
             <u>Ver proyecto</u>
           </a>
         </div>
-      </article>
+      </article> */}
     </div>
   );
 };

@@ -4,7 +4,6 @@ import "./video.css";
 const Video = ({ videoId }) => {
   return (
     <section className="video-section-container">
-      <h3>Video de presentación:</h3>
       <iframe
         className="iframe-video"
         src={`https://www.youtube.com/embed/${videoId}`}

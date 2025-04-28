@@ -6,8 +6,6 @@ import Video from "../Video/Video";
 const PerfilProfesional = () => {
   return (
     <div className="perfil-profesional-container">
-      <h3>Perfil Profesional:</h3>
-
       <section className="perfil-profesional-section">
         <p lang="es" aria-label="Descripción del perfil profesional">
           Profesional enfocado en el cumplimiento de objetivos, constante y

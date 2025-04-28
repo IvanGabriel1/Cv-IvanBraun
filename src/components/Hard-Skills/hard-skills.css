@@ -24,10 +24,26 @@
     padding-bottom: 0;
     border-bottom: none;
   }
+
+  .hard-skills-container h4 {
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hard-skills-container {
     margin-right: 3rem;
+  }
+
+  .hard-skills-container h4 {
+    margin-bottom: 1rem;
+  }
+
+  .hard-skills-ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.2rem;
+    margin: auto;
+    text-decoration: underline;
   }
 }
