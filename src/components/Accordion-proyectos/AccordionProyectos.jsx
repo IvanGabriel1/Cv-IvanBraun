@@ -4,7 +4,7 @@ import svgButtonUp from "../../assets/chevron-up-solid.svg";
 import svgButtondown from "../../assets/chevron-down-solid.svg";
 
 const AccordionProyectos = () => {
-  const [openAccordion, setOpenAccordion] = useState(null);
+  const [openAccordion, setOpenAccordion] = useState(1); //pasar a null si hay mas proyectos que quiera mostrar
 
   const toggleAccPr = (index) => {
     setOpenAccordion(openAccordion === index ? null : index);

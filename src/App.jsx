@@ -1,7 +1,6 @@
 import "./App.css";
 
 import MenuCv from "./components/MenuCv/MenuCv";
-
 import Presentacion from "./components/Presentacion/Presentacion";
 
 function App() {

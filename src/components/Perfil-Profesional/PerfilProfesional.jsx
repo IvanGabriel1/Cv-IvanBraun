@@ -1,26 +1,21 @@
-import React from "react";
 import "./perfil-profesional.css";
 import HardSkills from "../Hard-Skills/HardSkills";
-import Video from "../Video/Video";
 
 const PerfilProfesional = () => {
   return (
     <div className="perfil-profesional-container">
       <section className="perfil-profesional-section">
         <p lang="es" aria-label="Descripción del perfil profesional">
-          Profesional enfocado en el cumplimiento de objetivos, constante y
-          disciplinado para enfrentar desafíos hasta su finalización.
-          Comprometido con el aprendizaje continuo y dispuesto a asumir nuevos
-          retos que impulsen mi crecimiento personal y profesional. Cuento con
-          disponibilidad inmediata para integrarme a tu equipo, aportando
-          dedicación y compromiso para alcanzar los objetivos que se propongan.
+          Desarrollador Front-End con experiencia en React, JavaScript, HTML,
+          CSS y Firebase. Constante y disciplinado en el cumplimiento de
+          objetivos, con compromiso en el aprendizaje continuo y la aplicación
+          de buenas prácticas de desarrollo. Disponibilidad inmediata para
+          integrarme a un equipo, aportando dedicación y conocimientos técnicos
+          para alcanzar los objetivos propuestos.
         </p>
 
         <div className="hardskills-qr-container">
           <HardSkills />
-          <div className="qr-container">
-            <Video videoId={`ytzu5VEFbOc`} />
-          </div>
         </div>
       </section>
     </div>

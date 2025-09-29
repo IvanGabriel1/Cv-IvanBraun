@@ -10,6 +10,7 @@ const HardSkills = () => {
         <li> CSS</li>
         <li> JavaScript</li>
         <li> React</li>
+        <li> React Native</li>
         <li> Redux Toolkit</li>
         <li> Firebase</li>
         <li> Figma</li>
