@@ -57,6 +57,7 @@
   .menu-cv-container {
     background-color: var(--second-color);
     width: 80%;
+    padding: 0;
   }
 
   .routes-container nav a {

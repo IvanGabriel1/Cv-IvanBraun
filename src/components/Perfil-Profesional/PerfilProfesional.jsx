@@ -5,16 +5,17 @@ const PerfilProfesional = () => {
   return (
     <div className="perfil-profesional-container">
       <section className="perfil-profesional-section">
-        <p lang="es" aria-label="Descripción del perfil profesional">
+        <h3 className="perfil-title">Perfil Profesional</h3>
+
+        <p className="perfil-text">
           Desarrollador Front-End con experiencia en React, JavaScript, HTML,
-          CSS y Firebase. Constante y disciplinado en el cumplimiento de
-          objetivos, con compromiso en el aprendizaje continuo y la aplicación
-          de buenas prácticas de desarrollo. Disponibilidad inmediata para
-          integrarme a un equipo, aportando dedicación y conocimientos técnicos
-          para alcanzar los objetivos propuestos.
+          CSS y Firebase. Constante y orientado a resultados, con compromiso en
+          el aprendizaje continuo y en la aplicación de buenas prácticas.
+          Disponible para integrarme a un equipo aportando dedicación y solidez
+          técnica.
         </p>
 
-        <div className="hardskills-qr-container">
+        <div className="perfil-hardskills-wrapper">
           <HardSkills />
         </div>
       </section>

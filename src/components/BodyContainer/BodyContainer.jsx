@@ -1,4 +1,3 @@
-import React from "react";
 import "./body-container.css";
 import Contacto from "../Contacto/Contacto";
 import HardSkills from "../Hard-Skills/HardSkills";

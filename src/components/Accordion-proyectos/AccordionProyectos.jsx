@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./accordion-proyectos.css";
 import svgButtonUp from "../../assets/chevron-up-solid.svg";
 import svgButtondown from "../../assets/chevron-down-solid.svg";
@@ -13,6 +13,42 @@ const AccordionProyectos = () => {
   return (
     <div className="accordion-proyectos-container">
       {/* Proyecto 1 */}
+      <article
+        className={`accordion-pr-article ${
+          openAccordion === 2 ? "open-pr" : ""
+        }`}
+      >
+        <button className="accordion-pr-button" onClick={() => toggleAccPr(2)}>
+          <img
+            src={openAccordion === 2 ? svgButtonUp : svgButtondown}
+            alt={openAccordion === 2 ? "Cerrar" : "Abrir"}
+          />
+          DespertApp
+        </button>
+        <div
+          className={`accordion-pr-content ${
+            openAccordion === 2 ? "open-pr" : ""
+          }`}
+        >
+          <h5>Despertador - React Native</h5>
+          <p>
+            Desarrollé una aplicación móvil de alarmas utilizando React Native y
+            Expo. Implementé creación, edición y borrado de alarmas, selección
+            de sonidos personalizados y notificaciones locales programadas.
+            Incorporé manejo de estado global mediante Context API y generé
+            builds para Android con EAS Build.
+          </p>
+          <section>
+            Tecnologías utilizadas: React Native, Expo, Context API, Expo
+            Notifications, Expo AV, GitHub
+          </section>
+          <a target="_blank" href="https://github.com/IvanGabriel1/despertApp">
+            🔗 <u>Ver repositorio</u>
+          </a>
+        </div>
+      </article>
+
+      {/* Proyecto 2 */}
       <article
         className={`accordion-pr-article ${
           openAccordion === 1 ? "open-pr" : ""
@@ -39,7 +75,7 @@ const AccordionProyectos = () => {
           <section>
             <b>Tecnologías utilizadas: </b>
             React, Firebase (Storage, Database, Authentication), Redux Toolkit,
-            EmailJS, CSS, HTML, Git.
+            EmailJS, CSS, HTML, GitHub.
           </section>
           <a target="_blank" href="https://aiskelys-bakes.vercel.app/">
             🔗
@@ -47,45 +83,6 @@ const AccordionProyectos = () => {
           </a>
         </div>
       </article>
-
-      {/* Proyecto 2 */}
-      {/* <article
-        className={`accordion-pr-article ${
-          openAccordion === 2 ? "open-pr" : ""
-        }`}
-      >
-        <button className="accordion-pr-button" onClick={() => toggleAccPr(2)}>
-          <img
-            src={openAccordion === 2 ? svgButtonUp : svgButtondown}
-            alt={openAccordion === 2 ? "Cerrar" : "Abrir"}
-          />
-          CoderHouse - React.JS Pumba
-        </button>
-        <div
-          className={`accordion-pr-content ${
-            openAccordion === 2 ? "open-pr" : ""
-          }`}
-        >
-          <h5>Proyecto Final Curso React.js | CoderHouse</h5>
-          <p>
-            En dicho proyecto se realiza como trabajo final del curso de
-            coderhouse, en el cual se desarrolla un e-commerce con gestión de
-            datos en firebase, permite filtrar productos por categoría, agregar
-            productos al carrito, ver su detalle y generar un código endpoint
-            para el pedido realizado.
-          </p>
-          <section>
-            Tecnologías utilizadas: React, Firebase, CSS, HTML, Git
-          </section>
-          <a
-            target="_blank"
-            href="https://e-commerce-react-lime-phi.vercel.app/"
-          >
-            🔗
-            <u>Ver proyecto</u>
-          </a>
-        </div>
-      </article> */}
 
       {/* Proyecto 3 */}
       {/* <article
