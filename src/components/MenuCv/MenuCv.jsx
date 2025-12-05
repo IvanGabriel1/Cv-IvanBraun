@@ -4,6 +4,7 @@ import { Routes, Route, NavLink } from "react-router-dom";
 import PerfilProfesional from "../Perfil-Profesional/PerfilProfesional";
 import Proyectos from "../Proyectos/Proyectos";
 import Educacion from "../Educacion/Educacion";
+import Universidad from "../Universidad/Universidad";
 import PageNotFound from "../PageNotFound/PageNotFound";
 
 const MenuCv = () => {
@@ -28,6 +29,12 @@ const MenuCv = () => {
             to="/educacion"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
+            Cursos
+          </NavLink>
+          <NavLink
+            to="/universidad"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
             Educación
           </NavLink>
         </nav>
@@ -36,6 +43,7 @@ const MenuCv = () => {
             <Route path="/" element={<PerfilProfesional />} />
             <Route path="/proyectos" element={<Proyectos />} />
             <Route path="/educacion" element={<Educacion />} />
+            <Route path="/universidad" element={<Universidad />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./proyectos.css";
 import AccordionProyectos from "../Accordion-proyectos/AccordionProyectos";
 

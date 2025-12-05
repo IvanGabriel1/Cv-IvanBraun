@@ -1,4 +1,3 @@
-import React from "react";
 import "./hard-skills.css";
 
 const HardSkills = () => {
