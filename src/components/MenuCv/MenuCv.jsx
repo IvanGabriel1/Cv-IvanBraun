@@ -26,13 +26,13 @@ const MenuCv = () => {
             Proyectos
           </NavLink>
           <NavLink
-            to="/educacion"
+            to="/cursos"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
             Cursos
           </NavLink>
           <NavLink
-            to="/universidad"
+            to="/educacion"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
             Educación
@@ -42,8 +42,8 @@ const MenuCv = () => {
           <Routes>
             <Route path="/" element={<PerfilProfesional />} />
             <Route path="/proyectos" element={<Proyectos />} />
-            <Route path="/educacion" element={<Educacion />} />
-            <Route path="/universidad" element={<Universidad />} />
+            <Route path="/cursos" element={<Educacion />} />
+            <Route path="/educacion" element={<Universidad />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
