@@ -8,12 +8,13 @@ const PerfilProfesional = () => {
         <h3 className="perfil-title">Perfil Profesional</h3>
 
         <p className="perfil-text">
-          Desarrollador Front-End con experiencia en React, React Native,
-          JavaScript, HTML, CSS y Firebase. Autodidacta, constante y orientado a
-          resultados, con foco en crear interfaces funcionales y bien
-          estructuradas. Cuento con disponibilidad inmediata y busco integrarme
-          a un equipo donde aportar dedicación, responsabilidad y crecimiento
-          continuo.
+          Desarrollador Front-End especializado en React y React Native, con
+          experiencia en el desarrollo de aplicaciones web y móviles utilizando
+          JavaScript, HTML, CSS y Firebase. Trabajo de forma autónoma, con
+          enfoque en resultados y buenas prácticas. Me especializo en crear
+          interfaces funcionales, escalables y orientadas a la experiencia de
+          usuario, acompañando proyectos desde la idea inicial hasta su
+          implementación.
         </p>
 
         <div className="perfil-hardskills-wrapper">
