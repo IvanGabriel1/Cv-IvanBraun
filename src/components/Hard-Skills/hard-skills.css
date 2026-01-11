@@ -46,4 +46,20 @@
   .hard-skills-ul {
     max-width: 450px;
   }
+
+  .skill-chip {
+    padding: 0.2rem 0.4rem;
+    font-size: var(--step--3);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skill-chip {
+    padding: 0.3rem 0.6rem;
+    font-size: var(--step--2);
+  }
+
+  .hard-skills-ul {
+    max-width: 500px;
+  }
 }
