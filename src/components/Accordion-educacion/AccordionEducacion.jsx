@@ -73,7 +73,7 @@ const AccordionEducacion = () => {
 
       <article className="article-ed" onClick={() => toggleModal(1)}>
         <img src={logoCoder} alt="Logo de Coderhouse" />
-        <h5>SQL {<br />} Inicio confirmado: Enero 2026</h5>
+        <h5>SQL {<br />} En curso</h5>
         <img src={cursoSQL} alt="Fecha de inicio de curso y comisión." />
       </article>
 

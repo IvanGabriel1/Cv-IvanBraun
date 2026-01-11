@@ -18,6 +18,8 @@ const HardSkills = () => {
     "Responsive Design",
     "React Router",
     "Vite",
+    "SQL",
+    "MySQL",
   ];
 
   return (
