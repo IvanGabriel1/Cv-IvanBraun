@@ -1,4 +1,3 @@
-import React from "react";
 import "./menucv.css";
 import { Routes, Route, NavLink } from "react-router-dom";
 import PerfilProfesional from "../Perfil-Profesional/PerfilProfesional";

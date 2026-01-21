@@ -1,3 +1,14 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hard-skills-container {
   width: 100%;
   text-align: center;
@@ -7,7 +18,8 @@
 .hard-skills-container h4 {
   margin-bottom: 0.75rem;
   font-size: var(--step--1);
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.04rem;
+  color: var(--first-color);
 }
 
 .hard-skills-ul {
@@ -30,12 +42,14 @@
   transition: 0.2s ease-in-out;
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  animation: fadeUp 0.4s ease forwards;
 }
 
 .skill-chip:hover {
-  background: rgba(255, 255, 255, 0.12);
-  transform: scale(1.05);
-  cursor: default;
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-2px) scale(1.05);
+  cursor: help;
 }
 
 @media screen and (min-width: 768px) {
@@ -48,7 +62,7 @@
   }
 
   .skill-chip {
-    padding: 0.2rem 0.4rem;
+    padding: 0.3rem 0.6rem;
     font-size: var(--step--3);
   }
 }

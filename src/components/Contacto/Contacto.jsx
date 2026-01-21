@@ -18,6 +18,7 @@ const Contacto = () => {
           🧑‍💼
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/iv%C3%A1n-braun-a690aa17a/"
           >
             LinkedIn
