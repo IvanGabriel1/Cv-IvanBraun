@@ -43,8 +43,8 @@ const AccordionProyectos = () => {
           </p>
           <section>
             Tecnologías utilizadas: React Native, Expo (Bare / Dev Client), Expo
-            Notifications, Expo Task Manager & Background Fetch, Expo AV, React
-            Navigation, Context API, AsyncStorage, EAS Build.
+            Notifications, Expo AV, React Navigation, Context API, AsyncStorage,
+            EAS Build.
           </section>
           <a target="_blank" href="https://github.com/IvanGabriel1/notis">
             🔗
