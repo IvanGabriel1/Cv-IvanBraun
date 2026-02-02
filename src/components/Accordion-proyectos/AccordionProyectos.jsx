@@ -12,6 +12,46 @@ const AccordionProyectos = () => {
 
   return (
     <div className="accordion-proyectos-container">
+      <article
+        className={`accordion-pr-article ${
+          openAccordion === 1 ? "open-pr" : ""
+        }`}
+      >
+        <button className="accordion-pr-button" onClick={() => toggleAccPr(1)}>
+          <img
+            src={openAccordion === 1 ? svgButtonUp : svgButtondown}
+            alt={openAccordion === 1 ? "Cerrar" : "Abrir"}
+          />
+          Notis
+        </button>
+        <div
+          className={`accordion-pr-content ${
+            openAccordion === 1 ? "open-pr" : ""
+          }`}
+        >
+          <h5>
+            App de notificaciones - React Native y Expo (Bare Workflow / Dev
+            Client)
+          </h5>
+          <p>
+            Notis es una aplicación de notificaciones simples, claras y
+            personalizables. Permite programar notificaciones únicas indicando
+            hora y minutos específicos, y recibirlas correctamente incluso
+            cuando la aplicación se encuentra en segundo plano o cerrada. Está
+            pensada para usuarios que necesitan recordatorios puntuales, sin
+            complejidad innecesaria y con una experiencia visual cuidada.
+          </p>
+          <section>
+            Tecnologías utilizadas: React Native, Expo (Bare / Dev Client), Expo
+            Notifications, Expo Task Manager & Background Fetch, Expo AV, React
+            Navigation, Context API, AsyncStorage, EAS Build.
+          </section>
+          <a target="_blank" href="https://github.com/IvanGabriel1/notis">
+            🔗
+            <u>Ver repositorio</u>
+          </a>
+        </div>
+      </article>
       {/* Proyecto 1 */}
       <article
         className={`accordion-pr-article ${
@@ -51,19 +91,19 @@ const AccordionProyectos = () => {
       {/* Proyecto 2 */}
       <article
         className={`accordion-pr-article ${
-          openAccordion === 1 ? "open-pr" : ""
+          openAccordion === 3 ? "open-pr" : ""
         }`}
       >
-        <button className="accordion-pr-button" onClick={() => toggleAccPr(1)}>
+        <button className="accordion-pr-button" onClick={() => toggleAccPr(3)}>
           <img
-            src={openAccordion === 1 ? svgButtonUp : svgButtondown}
-            alt={openAccordion === 1 ? "Cerrar" : "Abrir"}
+            src={openAccordion === 3 ? svgButtonUp : svgButtondown}
+            alt={openAccordion === 3 ? "Cerrar" : "Abrir"}
           />
           Aiskely’s Bakes
         </button>
         <div
           className={`accordion-pr-content ${
-            openAccordion === 1 ? "open-pr" : ""
+            openAccordion === 3 ? "open-pr" : ""
           }`}
         >
           <h5>E-commerce</h5>
@@ -83,71 +123,6 @@ const AccordionProyectos = () => {
           </a>
         </div>
       </article>
-
-      {/* Proyecto 3 */}
-      {/* <article
-        className={`accordion-pr-article ${
-          openAccordion === 3 ? "open-pr" : ""
-        }`}
-      >
-        <button className="accordion-pr-button" onClick={() => toggleAccPr(3)}>
-          <img
-            src={openAccordion === 3 ? svgButtonUp : svgButtondown}
-            alt={openAccordion === 3 ? "Cerrar" : "Abrir"}
-          />
-          Página de Olé con HTML y CSS
-        </button>
-        <div
-          className={`accordion-pr-content ${
-            openAccordion === 3 ? "open-pr" : ""
-          }`}
-        >
-          <h5>Se copia la página de ole con html y css</h5>
-          <p>
-            Como práctica final de CSS realicé una copia de la interfaz del
-            diario deportivo Olé con HTML y CSS desde cero. El objetivo de este
-            proyecto fue poner a prueba las habilidades aprendidas de forma
-            autodidacta.
-          </p>
-          <section>Tecnologías utilizadas: HTML, CSS, JavaScript, Git</section>
-          <a target="_blank" href="https://copiando-plantilla.vercel.app/">
-            🔗
-            <u>Ver proyecto</u>
-          </a>
-        </div>
-      </article> */}
-
-      {/* Proyecto 4 */}
-      {/* <article
-        className={`accordion-pr-article ${
-          openAccordion === 4 ? "open-pr" : ""
-        }`}
-      >
-        <button className="accordion-pr-button" onClick={() => toggleAccPr(4)}>
-          <img
-            src={openAccordion === 4 ? svgButtonUp : svgButtondown}
-            alt={openAccordion === 4 ? "Cerrar" : "Abrir"}
-          />
-          Página de Práctica - Megalodón
-        </button>
-        <div
-          className={`accordion-pr-content ${
-            openAccordion === 4 ? "open-pr" : ""
-          }`}
-        >
-          <h5>Primera página realizada desde 0.</h5>
-          <p>
-            Proyecto de practica donde se realiza una página web Single Page,
-            donde se ofrece servicios, opiniones de clientes y un formulario de
-            contacto.
-          </p>
-          <section>Tecnologías utilizadas: HTML, CSS, Git</section>
-          <a target="_blank" href="https://megalodon-dun.vercel.app/">
-            🔗
-            <u>Ver proyecto</u>
-          </a>
-        </div>
-      </article> */}
     </div>
   );
 };
